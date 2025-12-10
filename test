@@ -1,0 +1,63 @@
+
+
+
+
+# demander le nom d'un legume, a partir de ce legume on renvoie la soupe qu'on peut faire,
+# donner le nombre de consonne et de voyelle
+# checker la lettre la plus récurrente dans le mot et si y'en a pas on renvoie la plus petite des deux
+# prix moyen au kilo du légume
+# on doit donner le nom du legume a l'inverse
+# si le légume est bio
+
+
+
+
+
+
+def main():
+    legume = input("Donnez moi le nom d'un légume")
+    soupe_liste = {"soupe_de_carotte","soupe_de_poireau","soupe_de_tomate","soupe_de_courgette","soupe_de_potiron"}
+    voyelles = "aeiouy"
+    consonnes = "bcdfghjklmnpqrstvwxz"
+    prix_kilo = [["carotte"][2.5], ["poireau"][3.0], ["tomate"][4.0], ["courgette"][2.8], ["potiron"][1.5]]
+
+
+def soupe(legume, soupe_liste):
+    if legume == "carotte":
+        return soupe_liste[0]
+    elif legume == "poireau":
+        return soupe_liste[1]
+    elif legume == "tomate":
+        return soupe_liste[2]
+    elif legume == "courgette":
+        return soupe_liste[3]
+    elif legume == "potiron":
+        return soupe_liste[4]
+    else:
+        return "Désolé, je ne connais pas ce légume."
+    
+def lettres(legume, voyelles, consonnes):
+    nb_voyelles = 0
+    nb_consonnes = 0
+    for lettre in legume:
+        if lettre in voyelles:
+            nb_voyelles += 1
+        elif lettre in consonnes:
+            nb_consonnes += 1
+    return nb_voyelles, nb_consonnes
+
+
+def prix(legume, prix_kilo):
+    for i in range(len(prix_kilo)):
+        if legume == prix_kilo[i][0]:
+            return prix_kilo[i][1]
+        s
+def recurrence(legume):
+    for i in range(len(legume)):
+
+        
+
+
+    
+
+
